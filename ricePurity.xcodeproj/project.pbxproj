@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF38285B1F16EF6100ED2052 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF38285A1F16EF6100ED2052 /* AppDelegate.swift */; };
+		EF38285D1F16EF6100ED2052 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF38285C1F16EF6100ED2052 /* ViewController.swift */; };
+		EF3828601F16EF6100ED2052 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF38285E1F16EF6100ED2052 /* Main.storyboard */; };
+		EF3828621F16EF6100ED2052 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF3828611F16EF6100ED2052 /* Assets.xcassets */; };
+		EF3828651F16EF6100ED2052 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF3828631F16EF6100ED2052 /* LaunchScreen.storyboard */; };
+		EF3828701F16EF6100ED2052 /* ricePurityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF38286F1F16EF6100ED2052 /* ricePurityTests.swift */; };
+		EF38287B1F16EF6100ED2052 /* ricePurityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF38287A1F16EF6100ED2052 /* ricePurityUITests.swift */; };
+		EF3828891F16F45900ED2052 /* RiceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3828881F16F45900ED2052 /* RiceCollectionViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF38286C1F16EF6100ED2052 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF38284F1F16EF6100ED2052 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF3828561F16EF6100ED2052;
+			remoteInfo = ricePurity;
+		};
+		EF3828771F16EF6100ED2052 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF38284F1F16EF6100ED2052 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF3828561F16EF6100ED2052;
+			remoteInfo = ricePurity;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF3828571F16EF6100ED2052 /* ricePurity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ricePurity.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF38285A1F16EF6100ED2052 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF38285C1F16EF6100ED2052 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF38285F1F16EF6100ED2052 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF3828611F16EF6100ED2052 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF3828641F16EF6100ED2052 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF3828661F16EF6100ED2052 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF38286B1F16EF6100ED2052 /* ricePurityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ricePurityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF38286F1F16EF6100ED2052 /* ricePurityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ricePurityTests.swift; sourceTree = "<group>"; };
+		EF3828711F16EF6100ED2052 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF3828761F16EF6100ED2052 /* ricePurityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ricePurityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF38287A1F16EF6100ED2052 /* ricePurityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ricePurityUITests.swift; sourceTree = "<group>"; };
+		EF38287C1F16EF6100ED2052 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF3828881F16F45900ED2052 /* RiceCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RiceCollectionViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF3828541F16EF6100ED2052 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF3828681F16EF6100ED2052 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF3828731F16EF6100ED2052 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF38284E1F16EF6100ED2052 = {
+			isa = PBXGroup;
+			children = (
+				EF3828591F16EF6100ED2052 /* ricePurity */,
+				EF38286E1F16EF6100ED2052 /* ricePurityTests */,
+				EF3828791F16EF6100ED2052 /* ricePurityUITests */,
+				EF3828581F16EF6100ED2052 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF3828581F16EF6100ED2052 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF3828571F16EF6100ED2052 /* ricePurity.app */,
+				EF38286B1F16EF6100ED2052 /* ricePurityTests.xctest */,
+				EF3828761F16EF6100ED2052 /* ricePurityUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF3828591F16EF6100ED2052 /* ricePurity */ = {
+			isa = PBXGroup;
+			children = (
+				EF38285A1F16EF6100ED2052 /* AppDelegate.swift */,
+				EF38285C1F16EF6100ED2052 /* ViewController.swift */,
+				EF3828881F16F45900ED2052 /* RiceCollectionViewCell.swift */,
+				EF38285E1F16EF6100ED2052 /* Main.storyboard */,
+				EF3828611F16EF6100ED2052 /* Assets.xcassets */,
+				EF3828631F16EF6100ED2052 /* LaunchScreen.storyboard */,
+				EF3828661F16EF6100ED2052 /* Info.plist */,
+			);
+			path = ricePurity;
+			sourceTree = "<group>";
+		};
+		EF38286E1F16EF6100ED2052 /* ricePurityTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF38286F1F16EF6100ED2052 /* ricePurityTests.swift */,
+				EF3828711F16EF6100ED2052 /* Info.plist */,
+			);
+			path = ricePurityTests;
+			sourceTree = "<group>";
+		};
+		EF3828791F16EF6100ED2052 /* ricePurityUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EF38287A1F16EF6100ED2052 /* ricePurityUITests.swift */,
+				EF38287C1F16EF6100ED2052 /* Info.plist */,
+			);
+			path = ricePurityUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF3828561F16EF6100ED2052 /* ricePurity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF38287F1F16EF6100ED2052 /* Build configuration list for PBXNativeTarget "ricePurity" */;
+			buildPhases = (
+				EF3828531F16EF6100ED2052 /* Sources */,
+				EF3828541F16EF6100ED2052 /* Frameworks */,
+				EF3828551F16EF6100ED2052 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ricePurity;
+			productName = ricePurity;
+			productReference = EF3828571F16EF6100ED2052 /* ricePurity.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF38286A1F16EF6100ED2052 /* ricePurityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF3828821F16EF6100ED2052 /* Build configuration list for PBXNativeTarget "ricePurityTests" */;
+			buildPhases = (
+				EF3828671F16EF6100ED2052 /* Sources */,
+				EF3828681F16EF6100ED2052 /* Frameworks */,
+				EF3828691F16EF6100ED2052 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF38286D1F16EF6100ED2052 /* PBXTargetDependency */,
+			);
+			name = ricePurityTests;
+			productName = ricePurityTests;
+			productReference = EF38286B1F16EF6100ED2052 /* ricePurityTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EF3828751F16EF6100ED2052 /* ricePurityUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF3828851F16EF6100ED2052 /* Build configuration list for PBXNativeTarget "ricePurityUITests" */;
+			buildPhases = (
+				EF3828721F16EF6100ED2052 /* Sources */,
+				EF3828731F16EF6100ED2052 /* Frameworks */,
+				EF3828741F16EF6100ED2052 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF3828781F16EF6100ED2052 /* PBXTargetDependency */,
+			);
+			name = ricePurityUITests;
+			productName = ricePurityUITests;
+			productReference = EF3828761F16EF6100ED2052 /* ricePurityUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF38284F1F16EF6100ED2052 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Levi Walsh";
+				TargetAttributes = {
+					EF3828561F16EF6100ED2052 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = XAM3QU453E;
+						ProvisioningStyle = Automatic;
+					};
+					EF38286A1F16EF6100ED2052 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EF3828561F16EF6100ED2052;
+					};
+					EF3828751F16EF6100ED2052 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EF3828561F16EF6100ED2052;
+					};
+				};
+			};
+			buildConfigurationList = EF3828521F16EF6100ED2052 /* Build configuration list for PBXProject "ricePurity" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF38284E1F16EF6100ED2052;
+			productRefGroup = EF3828581F16EF6100ED2052 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF3828561F16EF6100ED2052 /* ricePurity */,
+				EF38286A1F16EF6100ED2052 /* ricePurityTests */,
+				EF3828751F16EF6100ED2052 /* ricePurityUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF3828551F16EF6100ED2052 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF3828651F16EF6100ED2052 /* LaunchScreen.storyboard in Resources */,
+				EF3828621F16EF6100ED2052 /* Assets.xcassets in Resources */,
+				EF3828601F16EF6100ED2052 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF3828691F16EF6100ED2052 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF3828741F16EF6100ED2052 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF3828531F16EF6100ED2052 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF3828891F16F45900ED2052 /* RiceCollectionViewCell.swift in Sources */,
+				EF38285D1F16EF6100ED2052 /* ViewController.swift in Sources */,
+				EF38285B1F16EF6100ED2052 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF3828671F16EF6100ED2052 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF3828701F16EF6100ED2052 /* ricePurityTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF3828721F16EF6100ED2052 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF38287B1F16EF6100ED2052 /* ricePurityUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF38286D1F16EF6100ED2052 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF3828561F16EF6100ED2052 /* ricePurity */;
+			targetProxy = EF38286C1F16EF6100ED2052 /* PBXContainerItemProxy */;
+		};
+		EF3828781F16EF6100ED2052 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF3828561F16EF6100ED2052 /* ricePurity */;
+			targetProxy = EF3828771F16EF6100ED2052 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF38285E1F16EF6100ED2052 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF38285F1F16EF6100ED2052 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF3828631F16EF6100ED2052 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF3828641F16EF6100ED2052 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF38287D1F16EF6100ED2052 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF38287E1F16EF6100ED2052 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF3828801F16EF6100ED2052 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XAM3QU453E;
+				INFOPLIST_FILE = ricePurity/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Leviathanwalsh.ricePurity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EF3828811F16EF6100ED2052 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XAM3QU453E;
+				INFOPLIST_FILE = ricePurity/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Leviathanwalsh.ricePurity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		EF3828831F16EF6100ED2052 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ricePurityTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Leviathanwalsh.ricePurityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ricePurity.app/ricePurity";
+			};
+			name = Debug;
+		};
+		EF3828841F16EF6100ED2052 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ricePurityTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Leviathanwalsh.ricePurityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ricePurity.app/ricePurity";
+			};
+			name = Release;
+		};
+		EF3828861F16EF6100ED2052 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = ricePurityUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Leviathanwalsh.ricePurityUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ricePurity;
+			};
+			name = Debug;
+		};
+		EF3828871F16EF6100ED2052 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = ricePurityUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Leviathanwalsh.ricePurityUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ricePurity;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF3828521F16EF6100ED2052 /* Build configuration list for PBXProject "ricePurity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF38287D1F16EF6100ED2052 /* Debug */,
+				EF38287E1F16EF6100ED2052 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF38287F1F16EF6100ED2052 /* Build configuration list for PBXNativeTarget "ricePurity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF3828801F16EF6100ED2052 /* Debug */,
+				EF3828811F16EF6100ED2052 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EF3828821F16EF6100ED2052 /* Build configuration list for PBXNativeTarget "ricePurityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF3828831F16EF6100ED2052 /* Debug */,
+				EF3828841F16EF6100ED2052 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EF3828851F16EF6100ED2052 /* Build configuration list for PBXNativeTarget "ricePurityUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF3828861F16EF6100ED2052 /* Debug */,
+				EF3828871F16EF6100ED2052 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF38284F1F16EF6100ED2052 /* Project object */;
+}
