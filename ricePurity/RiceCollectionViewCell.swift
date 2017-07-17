@@ -19,7 +19,9 @@ class RiceCollectionViewCell: UICollectionViewCell {
         riceImageView.clipsToBounds = true
         contentView.addSubview(riceImageView) // Add UI elements to the contentView not to the cell itself
         
-        button = UIButton(frame: CGRect(x: contentView.frame.width / 2, y: contentView.frame.height / 2, width: frame.width / 6, height: frame.height / 6))
+        // TODO change this to a checkbox
+        button = UIButton(frame: CGRect(x: contentView.frame.width / 20, y: contentView.frame.height / 20, width: frame.width / 30, height: frame.width / 30))
+        
         button.backgroundColor = UIColor.orange
         button.setTitle("Change my Color", for: .normal)
         button.layer.cornerRadius = 3
@@ -29,6 +31,7 @@ class RiceCollectionViewCell: UICollectionViewCell {
     }
     
     func changeColor() {
+        // TODO Change to image with checkmark
         delegate?.changeColorOfButton(forCell: self)
     }
 

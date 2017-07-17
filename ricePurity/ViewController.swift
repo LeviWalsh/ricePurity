@@ -11,14 +11,18 @@ import UIKit
 class ViewController: UIViewController {
     
     var collectionView: UICollectionView!
+    var numChecked: Int = 0
+    
+    // TODO make this an array of labels that have the text of each question
     var images = [UIImage(named: "rice1"), UIImage(named: "rice2"), UIImage(named: "rice3"), UIImage(named: "rice4"), UIImage(named: "rice5")]
+
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         setupCollectionView()
-        addMoreImages()
+        // addMoreImages()
     }
     
     override func didReceiveMemoryWarning() {
@@ -38,12 +42,16 @@ class ViewController: UIViewController {
         collectionView.dataSource = self
         view.addSubview(collectionView)
     }
-    
-    func addMoreImages() {
+ 
+/*
+    // Shouldn't need this function but it's helpful just in case
+     func addMoreImages() {
         let moreImages = [UIImage(named: "mission6"), UIImage(named: "mission7")]
         images.append(contentsOf: moreImages)
         collectionView.reloadData()
-    }
+     }
+*/
+    
 }
 
 extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -74,18 +82,20 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
     
     //Sizes the cell
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width, height: view.frame.width)
+        return CGSize(width: view.frame.width, height: view.frame.width / 10)
     }
     
-    // To make something happen when a user taps a cell
-    //    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-    //
-    //    }
+     //To make something happen when a user taps a cell
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        // TODO check if the button is checked or unchecked, if checked then decrement
+        numChecked += 1
+    }
     
 }
 
 extension ViewController: RiceCollectionViewCellDelegate {
     func changeColorOfButton(forCell: RiceCollectionViewCell) {
+        // TODO make button background image into a checked box
         forCell.button.backgroundColor = UIColor.blue
     }
 }
