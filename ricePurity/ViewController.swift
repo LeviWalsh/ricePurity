@@ -10,11 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var collectionView: UICollectionView!
+    var tableView: UITableView!
     var numChecked: Int = 0
     
     // TODO make this an array of labels that have the text of each question
-    var images = [UIImage(named: "rice1"), UIImage(named: "rice2"), UIImage(named: "rice3"), UIImage(named: "rice4"), UIImage(named: "rice5")]
+    var questions = ["Question 1","Question 2","Question 3","Question 4","Question 1","Question 1","Question 1","Question 1","Question 1","Question 1","Question 1","Question 1","Question 1","Question 1","Question 1","Question 1","Question 1"]
 
     
     
@@ -32,15 +32,13 @@ class ViewController: UIViewController {
     
     //Initializing a collectionView and adding it to the View Controllers current view
     func setupCollectionView() {
-        let layout = UICollectionViewFlowLayout()
-        layout.minimumLineSpacing = 0
-        layout.minimumInteritemSpacing = 0
-        collectionView = UICollectionView(frame: view.frame, collectionViewLayout: layout)
-        collectionView.register(RiceCollectionViewCell.self, forCellWithReuseIdentifier: "riceCell")
-        collectionView.backgroundColor = UIColor.white
-        collectionView.delegate = self
-        collectionView.dataSource = self
-        view.addSubview(collectionView)
+        tableView = UITableView(frame: view.frame)
+        tableView.register(RiceTableViewCell.self, forCellReuseIdentifier: "riceCell")
+        tableView.backgroundColor = UIColor.white
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.allowsSelection = false;
+        view.addSubview(tableView)
     }
  
 /*
@@ -54,48 +52,45 @@ class ViewController: UIViewController {
     
 }
 
-extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension ViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return questions.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "riceCell") as! RiceTableViewCell
+        
+        for subview in cell.contentView.subviews{
+            subview.removeFromSuperview()
+        }
+        
+        cell.awakeFromNib()
+        cell.delegate = self
+        cell.riceLabel.text = questions[indexPath.row]
+        return cell
+        
+    }
     
     //specifying the number of sections in the collectionView
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
     
-    //specifying the number of cells in the given section
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return images.count
-    }
-    
-    //Make the cell
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "riceCell", for: indexPath) as! RiceCollectionViewCell
-        cell.awakeFromNib()
-        cell.delegate = self
-        return cell
-    }
-    
-    //Fill in the cell with information
-    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        let riceCell = cell as! RiceCollectionViewCell
-        riceCell.riceImageView.image = images[indexPath.row]
-    }
-    
-    //Sizes the cell
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width, height: view.frame.width / 10)
-    }
-    
-     //To make something happen when a user taps a cell
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        // TODO check if the button is checked or unchecked, if checked then decrement
-        numChecked += 1
-    }
-    
 }
 
 extension ViewController: RiceCollectionViewCellDelegate {
-    func changeColorOfButton(forCell: RiceCollectionViewCell) {
-        // TODO make button background image into a checked box
-        forCell.button.backgroundColor = UIColor.blue
+    func changeColorOfButton(forCell: RiceTableViewCell, state: Bool) {
+        if state {
+            numChecked -= 1
+            forCell.button.setImage(#imageLiteral(resourceName: "unchecked"), for: .normal)
+        } else {
+            numChecked += 1
+            forCell.button.setImage(#imageLiteral(resourceName: "checked"), for: .normal)
+        }
+        forCell.state = !forCell.state
+        print(numChecked)
     }
 }
+
+
