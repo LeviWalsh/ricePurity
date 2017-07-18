@@ -12,6 +12,10 @@ class ViewController: UIViewController {
     
     var collectionView: UICollectionView!
     var numChecked: Int = 0
+    var questions: [UILabel] = []
+    
+    
+    
     
     // TODO make this an array of labels that have the text of each question
     var images = [UIImage(named: "rice1"), UIImage(named: "rice2"), UIImage(named: "rice3"), UIImage(named: "rice4"), UIImage(named: "rice5")]
@@ -21,7 +25,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        var question1: UILabel, question2: UILabel
+        
+        questions.append(question1)
+        
+        
         setupCollectionView()
+        addTextToLabels()
         // addMoreImages()
     }
     
@@ -42,7 +52,15 @@ class ViewController: UIViewController {
         collectionView.dataSource = self
         view.addSubview(collectionView)
     }
+    
+    func addTextToLabels() {
+        setLabelText(question1, "Held hands")
+        setLabelText(question2, "Held hands")
+    }
  
+    func setLabelText(question: UILabel, words: String) {
+        question.text = words
+    }
 /*
     // Shouldn't need this function but it's helpful just in case
      func addMoreImages() {
