@@ -14,7 +14,7 @@
 		EF3828651F16EF6100ED2052 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF3828631F16EF6100ED2052 /* LaunchScreen.storyboard */; };
 		EF3828701F16EF6100ED2052 /* ricePurityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF38286F1F16EF6100ED2052 /* ricePurityTests.swift */; };
 		EF38287B1F16EF6100ED2052 /* ricePurityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF38287A1F16EF6100ED2052 /* ricePurityUITests.swift */; };
-		EF3828891F16F45900ED2052 /* RiceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3828881F16F45900ED2052 /* RiceCollectionViewCell.swift */; };
+		EF3828891F16F45900ED2052 /* RiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3828881F16F45900ED2052 /* RiceTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +48,7 @@
 		EF3828761F16EF6100ED2052 /* ricePurityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ricePurityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF38287A1F16EF6100ED2052 /* ricePurityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ricePurityUITests.swift; sourceTree = "<group>"; };
 		EF38287C1F16EF6100ED2052 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EF3828881F16F45900ED2052 /* RiceCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RiceCollectionViewCell.swift; sourceTree = "<group>"; };
+		EF3828881F16F45900ED2052 /* RiceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RiceTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +101,7 @@
 			children = (
 				EF38285A1F16EF6100ED2052 /* AppDelegate.swift */,
 				EF38285C1F16EF6100ED2052 /* ViewController.swift */,
-				EF3828881F16F45900ED2052 /* RiceCollectionViewCell.swift */,
+				EF3828881F16F45900ED2052 /* RiceTableViewCell.swift */,
 				EF38285E1F16EF6100ED2052 /* Main.storyboard */,
 				EF3828611F16EF6100ED2052 /* Assets.xcassets */,
 				EF3828631F16EF6100ED2052 /* LaunchScreen.storyboard */,
@@ -263,7 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF3828891F16F45900ED2052 /* RiceCollectionViewCell.swift in Sources */,
+				EF3828891F16F45900ED2052 /* RiceTableViewCell.swift in Sources */,
 				EF38285D1F16EF6100ED2052 /* ViewController.swift in Sources */,
 				EF38285B1F16EF6100ED2052 /* AppDelegate.swift in Sources */,
 			);
@@ -512,6 +512,7 @@
 				EF3828811F16EF6100ED2052 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF3828821F16EF6100ED2052 /* Build configuration list for PBXNativeTarget "ricePurityTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +521,7 @@
 				EF3828841F16EF6100ED2052 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF3828851F16EF6100ED2052 /* Build configuration list for PBXNativeTarget "ricePurityUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +530,7 @@
 				EF3828871F16EF6100ED2052 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
