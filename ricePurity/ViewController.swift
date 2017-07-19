@@ -16,7 +16,6 @@ class ViewController: UIViewController {
     
     
     
-    
     // TODO make this an array of labels that have the text of each question
     var images = [UIImage(named: "rice1"), UIImage(named: "rice2"), UIImage(named: "rice3"), UIImage(named: "rice4"), UIImage(named: "rice5")]
 
@@ -25,8 +24,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        var question1: UILabel, question2: UILabel
+        // var question1: UILabel
+        var question2: UILabel
         
+        question1.text = "Held HAnds"
+        
+        createLabels()
         questions.append(question1)
         
         
@@ -54,12 +57,13 @@ class ViewController: UIViewController {
     }
     
     func addTextToLabels() {
-        setLabelText(question1, "Held hands")
-        setLabelText(question2, "Held hands")
+        //setLabelText()
+//        setLabelText(question2, "Held hands")
     }
  
-    func setLabelText(question: UILabel, words: String) {
-        question.text = words
+    func createLabels() {
+        //question1.text = "Held Hands"
+        
     }
 /*
     // Shouldn't need this function but it's helpful just in case
