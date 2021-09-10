@@ -39,7 +39,7 @@ class ViewController: UIViewController {
     func setupScoreButton() {
         let scoreView: UIView = UIView(frame: CGRect(x: view.frame.width, y: tableView.frame.maxY, width: view.frame.width, height: view.frame.width * 3/10))
         let scoreButton: UIButton = UIButton(frame: CGRect(x: 1/20 * scoreView.frame.width, y: 1/10 * scoreView.frame.height, width: scoreView.frame.width * 9/10, height: scoreView.frame.height * 8 / 10))
-        scoreButton.addTarget(self, action: #selector(calculate), for: .touchUpInside)
+        scoreButton.addTarget(self, action: #selector(self.calculate(_ :)), for: .touchUpInside)
         scoreButton.backgroundColor = UIColor.red
         scoreButton.setTitleColor(UIColor.black, for: .normal)
         scoreButton.setTitle("Calculate Score", for: .normal)
@@ -47,8 +47,8 @@ class ViewController: UIViewController {
         view.addSubview(scoreView)
     }
     
-    func calculate() {
-        
+    @objc func calculate(_ sender: UIButton){ //<- needs `@objc`
+        print("\(sender)")
     }
  
 /*
@@ -89,12 +89,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     // TODO get this function to size the cells properly
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if questions[indexPath.row].characters.count > 60 {
-            return 105.0
-        } else if questions[indexPath.row].characters.count > 30 {
-            return 70.0
-        }
-            return 35.0
+        return 105
     }
     
 }
